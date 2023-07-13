@@ -1,14 +1,28 @@
 .card {
-  border: 2px solid yellowgreen;
+  border: 2px solid rgb(229, 71, 129);
   max-width: 18rem;
   padding: 1rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.imageCard {
+  position: relative;
 }
 
 .imageCard > img {
   max-width: 16rem;
   object-fit: cover;
+}
+
+.eventtype {
+  position: absolute;
+  top: 10%;
+  padding: 1rem;
+  background-color: rgb(229, 71, 129);
+  border-radius: 3%;
+  left: 5%;
 }

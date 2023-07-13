@@ -1,7 +1,9 @@
 .homePage {
   display: flex;
   flex-direction: column;
-  /* width: 100vh; */
+  background-color: #353f42;
+  color: #fff;
+  padding: 1rem 2rem;
 }
 
 .cardContainer {
@@ -11,4 +13,13 @@
   align-items: center;
   gap: 1rem;
   margin: 2rem 0rem;
+}
+
+.homePageHeading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homePageHeading > select {
+  cursor: pointer;
 }

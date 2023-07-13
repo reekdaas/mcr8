@@ -16,7 +16,7 @@ export default function EventCard({ data }) {
     >
       <div className={styles.imageCard}>
         <img src={data.eventThumbnail} alt={data.title} />
-        <p>{data.eventType}</p>
+        <p className={styles.eventtype}>{data.eventType}</p>
       </div>
       <p>{date}</p>
       <h3>{data.title}</h3>

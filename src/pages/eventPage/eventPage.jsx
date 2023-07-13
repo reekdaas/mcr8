@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { AiFillClockCircle } from "react-icons/ai";
 import { GrLocation } from "react-icons/gr";
 import { data } from "../../data/data";
@@ -10,6 +10,7 @@ import { useState } from "react";
 import Modal from "../../component/modal/modal";
 
 export default function EventPage() {
+  const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);
   const [rsvp, setRsvp] = useState(false);
 
@@ -24,6 +25,13 @@ export default function EventPage() {
 
   return (
     <div className={styles.eventPage}>
+      <div
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        <ButtonCard data={"Home"} />
+      </div>
       <div className={styles.eventInfo}>
         <h1>{event.title}</h1>
         <p>Hosted By: {event.hostedBy}</p>
