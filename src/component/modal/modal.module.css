@@ -1,0 +1,53 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+}
+
+.editModalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30rem;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  margin: 2rem 0rem;
+  background-color: #353f42;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.editModalHeader {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.editInfoRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.editInfoRow > input {
+  padding: 0.5rem 1rem;
+}
+
+.btn {
+  width: 10rem;
+}
