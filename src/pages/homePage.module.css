@@ -1,0 +1,14 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  /* width: 100vh; */
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0rem;
+}
