@@ -26,8 +26,8 @@ export default function EventPage() {
   const currentDate = new Date().getDate();
   const eventDate = new Date(event.eventStartTime).getDate();
 
-  const checkDate = currentDate > eventDate;
-  // console.log(checkDate);
+  const checkDate = eventDate > currentDate;
+  console.log(checkDate);
 
   return (
     <div className={styles.eventPage}>
