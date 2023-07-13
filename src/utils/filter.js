@@ -13,8 +13,8 @@ const filterByEventType = (data, { fliterBySelect }) => {
 };
 
 export default function Filter(allData, filterState) {
-  console.log(allData);
-  console.log(filterState);
+  // console.log(allData);
+  // console.log(filterState);
   const arrayOfFunctions = [filterBySearchQuery, filterByEventType];
 
   arrayOfFunctions.forEach(

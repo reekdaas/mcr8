@@ -1,6 +1,6 @@
 export const initialValue = {
   filterBySearch: "",
-  fliterBySelect: "Both",
+  fliterBySelect: "both",
 };
 
 export function searchReducer(state, { type, payload }) {
