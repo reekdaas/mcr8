@@ -23,6 +23,10 @@ export default function EventPage() {
   const startTime = getTime(event.eventStartTime);
   const endTime = getTime(event.eventEndTime);
 
+  // const currentDate = new Date();
+  const checkDate = event.eventStartTime > new Date();
+  // console.log(checkDate);
+
   return (
     <div className={styles.eventPage}>
       <div
@@ -78,7 +82,7 @@ export default function EventPage() {
             ))}
           </div>
         </div>
-        {event.isPaid && (
+        {checkDate && (
           <div
             className={styles.rsvpBtn}
             onClick={() => {
