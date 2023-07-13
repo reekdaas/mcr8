@@ -23,8 +23,8 @@ export default function EventPage() {
   const startTime = getTime(event.eventStartTime);
   const endTime = getTime(event.eventEndTime);
 
-  const currentDate = new Date().getDate();
-  const eventDate = new Date(event.eventStartTime).getDate();
+  const currentDate = new Date().getTime();
+  const eventDate = new Date(event.eventStartTime).getTime();
 
   const checkDate = eventDate > currentDate;
   console.log(checkDate);
