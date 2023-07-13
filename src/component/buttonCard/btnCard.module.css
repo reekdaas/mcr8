@@ -1,0 +1,21 @@
+.card {
+  align-self: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 3rem;
+  text-align: center;
+  background-color: rgb(229, 71, 129);
+  color: #fff;
+  transition-property: all;
+  transition-duration: 400ms;
+  transition-delay: 200ms;
+  text-transform: uppercase;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
